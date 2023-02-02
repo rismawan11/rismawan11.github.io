@@ -4,11 +4,11 @@
     <h1>File upload</h1>
 
     <p>Upload Data</p>
-    <form action="/action_page.php">
+    <form action="/action_page.php" method="get">
       <label for="myfile">Browse File:</label>
       <input type="file" id="myfile" name="myfile"><br><br>
-    </form>
-<form action="/action_page.php">
+
+
   <label for="type">Data Type:</label>
   <select name="type" id="type">
     <option value="Replace Mandiri">Replace Mandiri</option>
@@ -20,11 +20,30 @@
     <option value="Pameran">Pameran</option>
     <option value="Migrasi">Migrasi</option>
   </select>
+  <p>Checking Bank</p>
+  
+  <input type="checkbox" id="Mandiri" name="bank" value="Mandiri">
+  <label for="Mandiri">Mandiri</label><br>
+
+  <input type="checkbox" id="BNI" name="bank" value="BNI">
+  <label for="BNI">BNI</label><br>
+
+  <input type="checkbox" id="BCA" name="bank" value="BCA">
+  <label for="BCA">BCA</label><br>
+
+  <input type="checkbox" id="BRI" name="bank" value="BRI">
+  <label for="BRI">BRI</label><br>
+
+  <input type="checkbox" id="BTN" name="bank" value="BTN">
+  <label for="BTN">BTN</label><br>
+
   <br><br>
   <input type="submit" value="Submit">
 </form>
-
 <p>Click the "Submit" button".</p>
+
+
+  
 
 </body>
 </html>
