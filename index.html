@@ -1,127 +1,27 @@
 <!DOCTYPE html>
-<html>
-<body>
-    <h1>File upload</h1>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Customer Service Chat Dashboard</title>
+    <meta name="description" content="Modern, clean customer service chat interface for seamless support communication" />
+    <meta name="author" content="Customer Service Team" />
 
-    <p>Upload Data</p>
-    <form action="/action_page.php" method="get">
-      <label for="myfile">Browse File:</label>
-      <input type="file" id="myfile" name="myfile"><br><br>
+    <meta property="og:title" content="Customer Service Chat Dashboard" />
+    <meta property="og:description" content="Modern, clean customer service chat interface for seamless support communication" />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="https://lovable.dev/opengraph-image-p98pqg.png" />
 
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:site" content="@lovable_dev" />
+    <meta name="twitter:image" content="https://lovable.dev/opengraph-image-p98pqg.png" />
+    
+    <!-- ElevenLabs Conversational AI -->
+    <script src="https://unpkg.com/@elevenlabs/convai-widget-embed" async type="text/javascript"></script>
+  </head>
 
-  <label for="type">Data Type:</label>
-  <select name="type" id="type">
-    <option value="Replace Mandiri">Replace Mandiri</option>
-    <option value="Replace Member Bank">Replace Member Bank</option>
-    <option value="Part">Part</option>
-    <option value="Part Member Bank">Part Member Bank</option>
-    <option value="New Aquisisi Mandiri">New Aquisisi Mandiri</option>   
-    <option value="New Aquisisi Member Bank">New Aquisisi Member Bank</option>
-    <option value="Pameran">Pameran</option>
-    <option value="Migrasi">Migrasi</option>
-  </select>
-  <p>Checking Bank</p>
-  
-  <input type="checkbox" id="Mandiri" name="bank" value="Mandiri">
-  <label for="Mandiri">Mandiri</label><br>
-
-  <input type="checkbox" id="BNI" name="bank" value="BNI">
-  <label for="BNI">BNI</label><br>
-
-  <input type="checkbox" id="BCA" name="bank" value="BCA">
-  <label for="BCA">BCA</label><br>
-
-  <input type="checkbox" id="BRI" name="bank" value="BRI">
-  <label for="BRI">BRI</label><br>
-
-  <input type="checkbox" id="BTN" name="bank" value="BTN">
-  <label for="BTN">BTN</label><br>
-
-  <p>Validate Bank</p>
-  <select id="bank" name="bank" size="3">
-    <option value="Mandiri">Mandiri</option>
-    <option value="BNI">BNI</option>
-    <option value="BCA">BCA</option>
-    <option value="BRI">BRI</option>
-    <option value="BTN">BTN</option>
-  </select>
-  
-  
-  <style>
-    table {
-      border-collapse: collapse;
-      width: 100%;
-      overflow-y: scroll;
-      height: 200px;
-    }
-  
-    th, td {
-      border: 1px solid black;
-      padding: 8px;
-      text-align: left;
-    }
-  
-    th {
-      background-color: lightgray;
-    }
-  </style>
-  
-  <table>
-    <thead>
-      <tr>
-        <th>Number</th>
-        <th>Bank Name</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td>1</td>
-        <td>MANDIRI</td>
-      </tr>
-      <tr>
-        <td>2</td>
-        <td>BNI</td>
-      </tr>
-      <tr>
-        <td>3</td>
-        <td>BCA</td>
-      </tr>
-      <tr>
-        <td>4</td>
-        <td>BTN</td>
-      </tr>
-      <tr>
-        <td>5</td>
-        <td>BRI</td>
-      </tr>
-      <tr>
-        <td>6</td>
-        <td>CIMB NIAGA</td>
-      </tr>
-      <tr>
-        <td>7</td>
-        <td>DANAMON</td>
-      </tr>
-      <tr>
-        <td>8</td>
-        <td>PERMATA</td>
-      </tr>
-      <tr>
-        <td>9</td>
-        <td>PANIN</td>
-      </tr>
-      <tr>
-        <td>10</td>
-        <td>MAYBANK</td>
-      </tr>
-    </tbody>
-  </table>
-        
-  <br><br>
-  <input type="submit" value="Submit">
-</form>
-<p>Click the "Submit" button".</p>
-  
-
-</body>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
 </html>
